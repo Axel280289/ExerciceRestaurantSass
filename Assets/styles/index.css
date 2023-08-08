@@ -27,17 +27,24 @@ body {
   background: #21201e;
 }
 
+main {
+  background: #21201e;
+}
+
 header {
   background: url(../img/bg-slider-06.jpg) center/cover;
   height: 100vh;
   color: white;
   padding: 40px;
-  max-width: 85%;
+  max-width: 100%;
   margin: 0 auto;
 }
 header nav {
   display: grid;
   grid-template-columns: 15% 70% 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .logo {
   margin: 0 0 0 auto;
@@ -108,5 +115,278 @@ header h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 83%;
+  height: 78%;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #eee;
+  max-height: 400px;
+}
+.section1 .introText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 350px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 2px dashed rgb(166, 114, 69);
+  margin: 25px;
+}
+.section1 h3 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 15px;
+  padding-top: 20px;
+}
+.section1 h2 {
+  line-height: 20px;
+}
+.section1 img:nth-of-type(1) {
+  padding: 20px;
+}
+.section1 img:nth-of-type(2) {
+  width: 8%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.section1 h5 {
+  font-family: Roboto, serif;
+  font-weight: 600;
+}
+.section1 h6 {
+  color: rgb(182, 182, 182);
+  font-weight: 700;
+  font-size: 0.6rem;
+  line-height: 5px;
+  padding-bottom: 25px;
+}
+.section1 .pictureIntro {
+  background: url(../img/store-01.jpg) center/cover;
+  background-position: 50% 75%;
+}
+
+.section2 {
+  background: left 100%/100% 67% url(../img/bg-menu-01.jpg) no-repeat;
+  padding-bottom: 100px;
+}
+.section2 h3 {
+  font-family: Allura, cursive;
+  color: rgb(166, 114, 69);
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 40px 0 25px;
+}
+.section2 img {
+  padding-bottom: 25px;
+}
+.section2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+}
+.section2 li {
+  color: #eee;
+  border-bottom: 1px rgb(182, 182, 182) solid;
+  padding-bottom: 8px;
+}
+
+.menu {
+  max-height: 800px;
+  width: 50%;
+  background: #eee;
+  margin: 25px auto;
+  border-top: 3px solid rgb(166, 114, 69);
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 20% 20% 20% 20%;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 50px 20px;
+  height: 150px;
+  border-bottom: 1px dashed rgb(182, 182, 182);
+  width: 90%;
+  margin: 0 auto;
+}
+.meal img {
+  width: 20%;
+  border-radius: 50%;
+  padding: 0;
+}
+.meal h3 {
+  font-size: 1rem;
+  font-family: Poppins, serif;
+  color: #21201e;
+  margin: 0;
+  padding: 0;
+}
+
+.meal-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 10px;
+}
+.meal-text h3 {
+  text-transform: uppercase;
+}
+
+.price {
+  margin: 0 5px 0 auto;
+  color: rgb(166, 114, 69);
+  font-weight: 900;
+}
+
+.reservation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 65%;
+  margin: 60px auto;
+}
+
+.time {
+  background: black;
+}
+.time .border {
+  border: 1px dashed rgb(182, 182, 182);
+  margin: 20px;
+}
+.time h2 {
+  color: #eee;
+  padding-bottom: 30px;
+  line-height: 0px;
+  font-size: 1.7rem;
+}
+.time h3 {
+  color: rgb(166, 114, 69);
+  padding: 25px 0 0;
+  font-family: Allura, cursive;
+  color: rgb(166, 114, 69);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.time h4 {
+  color: rgb(166, 114, 69);
+  font-family: Poppins, serif;
+  padding: 40px 20px 5px 20px;
+}
+.time h5 {
+  color: rgb(166, 114, 69);
+  padding: 40px;
+  font-size: 1.5rem;
+}
+.time p {
+  color: #eee;
+  font-family: Roboto, serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.time img {
+  padding: 30px 30px 10px;
+}
+
+.online {
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.online h3 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-top: 20px;
+}
+.online h2 {
+  font-family: Poppins, serif;
+  font-size: 2rem;
+  color: #21201e;
+  line-height: 10px;
+}
+.online img {
+  padding: 50px 25px 0 25px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  width: 80%;
+  gap: 0px 15px;
+  margin: 0 auto;
+}
+form input {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px rgb(182, 182, 182) solid;
+  background: #eee;
+}
+form select {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px rgb(182, 182, 182) solid;
+  background: #eee;
+}
+
+button {
+  font-family: Poppins, serif;
+  color: #eee;
+  padding: 15px 25px;
+  border-radius: 35px;
+  background: #21201e;
+  width: 175px;
+  margin: 0 auto;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=index.css.map */
